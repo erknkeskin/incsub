@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>incsub | Register</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="favicon.png" rel="icon" type="image/png"/>
+</head>
+<body>
+<main>
+    <div class="pos-fixed left-0 left-wrapper bg-white height-100">
+        <form class="form display-block">
+            <h1 class="left">Let's set up your account</h1>
+            <p>Already have an account? <a href="#" class="weight-700">Sign in</a></p>
+
+            <div class="row">
+                <label for="fullname" class="pos-relative display-block">
+                    <span class="label-text display-none pos-absolute">Your name</span>
+                    <input onfocusin="focusField(this)" onfocusout="unFocusField(this)" class="input width-100 display-block pos-relative" name="fullname" placeholder="Your name" type="text"/>
+                    <span class="helper-text display-none">Your name is required</span>
+                </label>
+            </div>
+            <div class="row">
+                <label for="email" class="pos-relative display-block">
+                    <span class="label-text display-none pos-absolute">Email address</span>
+                    <input onfocusin="focusField(this)" onfocusout="unFocusField(this)" class="input width-100 display-block pos-relative" name="email" placeholder="Email address" type="email"/>
+                    <span class="helper-text display-none">Please enter a valid email address</span>
+                </label>
+            </div>
+            <div class="row">
+                <label for="user_type" class="pos-relative display-block">
+                    <select name="user_type" class="dropdown width-100">
+                        <option value="">I would describe my user type as</option>
+                        <option value="Developer">Developer</option>
+                        <option value="Copy writer">Copy writer</option>
+                    </select>
+                </label>
+            </div>
+            <div class="row pos-relative">
+                <i class="icon eye-slash-solid password-icon" onclick="showHidePassword()"></i>
+                <label for="password" class="pos-relative display-block">
+                    <span class="label-text display-none pos-absolute">Password</span>
+                    <input onfocusin="focusField(this)" onfocusout="unFocusField(this)" class="input width-100 display-block pos-relative" name="password" placeholder="Password" type="password"/>
+                    <span class="helper-text">Minimum 8 characters</span>
+                </label>
+            </div>
+            <div class="row">
+                <button type="button" class="button width-100" disabled>Next</button>
+            </div>
+            <div class="row">
+                <p class="form-footer-text">By clicking the "Next" button, you agree to creating a free account, and to <a href="#" class="weight-700">Terms of Service</a> and <a href="#" class="weight-700">Privacy Policy</a></p>
+            </div>
+        </form>
+    </div>
+    <div class="pos-fixed right-0 right-wrapper bg-blue height-100">
+        <div class="text">
+            <h1 class="text-center">Dummy Heading</h1>
+            <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+    </div>
+</main>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
