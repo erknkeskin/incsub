@@ -1,2 +1,2 @@
 # Register Form Template
-# Only HTML,CSS and ES6
+<p>Only HTML,CSS and ES6</p>
